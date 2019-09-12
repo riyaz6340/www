@@ -3,7 +3,7 @@
     var form_id = "inline_email";
 
     var data = {
-        "access_token": "ejmobb646prbmytywhyrvnqn" // sent after you sign up
+        "access_token": "2245pz0eohpxv0v516d91x44" // sent after you sign up
     };
 
     function onSuccess() {
@@ -34,7 +34,7 @@
 	var pmemail = $("#" + form_id + " [name='pmemail']").val();
 	var pmphone = $("#" + form_id + " [name='pmphone']").val();
     var totalmessage = "Name = " + pmname + "\nEmail = " + pmemail + "\nphone number = " + pmphone + "\nMessage = " + message
-    alert(totalmessage);
+    //alert(totalmessage);
         data['subject'] = subject;
         data['text'] = totalmessage;
 

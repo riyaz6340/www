@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/mail.js"></script>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
@@ -339,7 +340,7 @@
                         <div class="col-md-12 col-lg-3">
                             <div class="cb-ft-box cb-ft-dl-box mb-4">
                                 <h3 class="h3 mb-5 cb-txt">Drop Us A Line</h3>
-                                <form action="" class="cb-ft-contact-form">
+                                <div id="inline_email" class="cb-ft-contact-form">
                                     <div class="row">
                                         <div class="col-md-12 col-lg-12">
                                             <div class="form-group">
@@ -368,13 +369,13 @@
                                         </div>
                                         <div class="col-md-12 col-lg-12">
                                             <div class="form-group">
-                                                <button type="submit" class="btn cb-ft-cf-btn">SEND MESSAGE &nbsp;
+                                                <button type="submit" name="sendemail" class="btn cb-ft-cf-btn" onclick="send();">SEND MESSAGE &nbsp;
                                                     <i class="mdi mdi-send"></i>
                                                 </button>
                                             </div>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>

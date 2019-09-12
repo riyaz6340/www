@@ -1,6 +1,4 @@
-<!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
@@ -112,32 +110,32 @@
                         </div>
                         <div class="col-md-7 col-lg-7">
                             <div class="cb-cp-form-box wow fadeInRight" data-wow-duration="1s" data-wow-delay="0s">
-                                <form action="" class="cb-cp-form">
+                                <form id="inline_email" class="cb-cp-form">
                                     <h4 class="h4 mb-4 cb-txt">Send Us A Message</h4>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Name"> </div>
+                                                <input type="text" name="pmname" id="pmName" class="form-control" placeholder="Name"> </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="email" class="form-control" placeholder="Email"> </div>
+                                                <input type="email" name="pmemail" id="pmEmail" class="form-control" placeholder="Email"> </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Phone Number"> </div>
+                                                <input type="text" name="pmphone" class="form-control" placeholder="Phone Number"> </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Subject"> </div>
+                                                <input type="text" name="subject" class="form-control" placeholder="Subject"> </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <textarea rows="5" class="form-control" placeholder="Message"></textarea> </div>
+                                                <textarea rows="5" name="pmmessage" class="form-control" placeholder="Message"></textarea> </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <button type="submit" class="cb-cp-btn">SEND MESSAGE &nbsp;
+                                                <button type="submit" name="sendemail" class="cb-cp-btn">SEND MAIL &nbsp;
                                                     <i class="mdi mdi-send"></i>
                                                 </button>
                                             </div>
@@ -149,6 +147,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="cb-map">
                 <div class="container">
                     <div class="row mb-4">
@@ -302,7 +301,7 @@
                         <div class="col-md-12 col-lg-3">
                             <div class="cb-ft-box cb-ft-dl-box mb-4">
                                 <h3 class="h3 mb-5 cb-txt">Drop Us A Line</h3>
-                                <form action="" class="cb-ft-contact-form">
+                                <form id="inline_email" class="cb-ft-contact-form">
                                     <div class="row">
                                         <div class="col-md-12 col-lg-12">
                                             <div class="form-group">
@@ -331,7 +330,7 @@
                                         </div>
                                         <div class="col-md-12 col-lg-12">
                                             <div class="form-group">
-                                                <button type="submit" class="btn cb-ft-cf-btn">SEND MESSAGE &nbsp;
+                                                <button name='sendemail' class="btn cb-ft-cf-btn">SEND MESSAGE &nbsp;
                                                     <i class="mdi mdi-send"></i>
                                                 </button>
                                             </div>
@@ -394,6 +393,8 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa6tOnl1p9KKViJlYq4hyGQ1rIlxNuVQQ&callback=initMap"></script>
     <script src="js/cb-plugins.js"></script>
     <script src="js/cb-custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/mail.js"></script>
 </body>
 
 </html>
